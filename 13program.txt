@@ -1,0 +1,12 @@
+import pandas as pd
+import numpy as np
+
+data = pd.read_csv("stock_data.csv")
+
+closing_prices = data["Close"]
+
+mean_price = np.mean(closing_prices)
+std_price = np.std(closing_prices)
+
+print("Mean Closing Price:", mean_price)
+print("Standard Deviation:", std_price)
